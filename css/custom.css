@@ -1,0 +1,77 @@
+/* 
+  File di personalizzazione CSS per il sito del consulente finanziario
+  Questo file permette di modificare facilmente i colori e lo stile del sito
+*/
+
+:root {
+  /* Colori principali - facilmente modificabili */
+  --color-primary: #003366;      /* Blu scuro - colore principale */
+  --color-secondary: #0077b6;    /* Blu medio - colore secondario */
+  --color-accent: #4ecdc4;       /* Turchese - colore di accento */
+  --color-text: #333333;         /* Grigio scuro - testo principale */
+  --color-text-light: #666666;   /* Grigio medio - testo secondario */
+  --color-background: #f8f9fa;   /* Grigio chiaro - sfondo */
+  --color-white: #ffffff;        /* Bianco - sfondo elementi */
+}
+
+/* Stile generale */
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Header e navigazione */
+.bg-navy {
+  background-color: var(--color-primary) !important;
+}
+
+.site-header {
+  background-color: var(--color-primary);
+}
+
+/* Pulsanti e link */
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+a {
+  color: var(--color-secondary);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* Elementi del blog */
+.post-card {
+  background-color: var(--color-white);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
